@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    <select id="filter">
+        <option>All</option>
+        <option >Work</option>
+        <option>PersonalWork</option>
+    </select>
+<div class="container">
+ <div class="container1">
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Sub Category</th>
+                <th>Duration</th>
+                <th>Task</th>
+                
+            </tr>
+            
+        </thead>
+        
+        <tbody>
+      
+        </tbody>
+    </table>
+</div>
+<div class="container2">
+<form id="taskForm">
+
+  <h2>Add New Task</h2>
+  <label for="fname">Category:</label><br>
+  <input type="text" id="category" value="" ><br>
+  <label for="fname">SubCategory:</label><br>
+  <input type="text" id="subCategory" value="" ><br>
+  <label for="fname">Duration:</label><br>
+  <input type="time" id="duration" value="" ><br>
+  <label for="fname">Task:</label><br>
+  <input type="text" id="task" value="" ><br>
+  <input type="submit" value="ADD TASK" >
+</form>
+<div class="div">
+    <p class="stopwatch">00:00:00</p>
+    <button id="StopStartbutton" class="btn" onclick="startStopButton()">START</button>
+   <button onclick="resetTimer()" class="btn1">RESET</button>
+  </div>
+</div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

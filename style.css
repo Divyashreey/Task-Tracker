@@ -1,0 +1,205 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/1365926127/photo/macro-shot-of-a-snowflake-in-vivid-neon-colors-dark-and-purple-winter-background.webp?b=1&s=170667a&w=0&k=20&c=_3BxzVn-hgRogqwO8vCAYL_-R7eHfNyByasxvQIIKr0='); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center;
+    background-color: #f5e6f6; 
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #ffffff; 
+    text-align: center;
+}
+h2,.loginTitle{
+    color: #673ab7; 
+    text-align: center;
+}
+
+#filter {
+    color: #673ab7; 
+    border: 2px solid #673ab7; 
+    padding: 8px 12px;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.container {
+    display: flex; 
+    flex-wrap: wrap; /* Allow containers to wrap to next line on smaller screens */
+    justify-content: space-between; 
+    margin: 30px auto; 
+}
+
+.container1 {
+    width: 60%; 
+    background-color: #ede7f6; 
+    padding: 20px;
+    margin-left: 20px; 
+    border: 2px solid #673ab7; 
+    border-radius: 5px;
+}
+
+.container2 {
+    width: 30%; 
+    background-color: #ede7f6; 
+    padding: 20px;
+    margin-right: 20px; 
+    border: 2px solid #673ab7; 
+    border-radius: 5px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+th,
+td {
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0; 
+    font-weight: bold; 
+    color: #333; 
+    text-transform: uppercase; 
+}
+
+td {
+    background-color: #fff; 
+    color: #666; 
+}
+
+tr:hover {
+    background-color: #f9f9f9; 
+}
+
+tr:first-child {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+tr:last-child {
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+}
+
+td:first-child {
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+
+td:last-child {
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+}
+
+td, th {
+    transition: background-color 0.3s ease;
+}
+
+td:hover, th:hover {
+    background-color: #f5f5f5;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+    padding: 20px; 
+    background-color: #ede7f6; 
+    border: 2px solid #673ab7; 
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #673ab7; 
+}
+
+input[type="text"],
+input[type="time"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 2px solid #673ab7; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    background-color: #673ab7; 
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5e35b1; 
+}
+
+.div {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.stopwatch {
+    color: #673ab7; 
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+.btn,
+.btn1,
+.update-btn,
+.delete-btn,
+#add {
+    background-color: #673ab7; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px; 
+}
+
+.btn:hover,
+.btn1:hover,
+.update-btn:hover,
+.delete-btn:hover {
+    background-color: #5e35b1; 
+}
+.cont {
+    width: 300px;
+    margin: 70px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    align-items:center;
+    justify-content:center;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+    }
+
+    .container1,
+    .container2 {
+        width: 100%; /* Make containers full width on smaller screens */
+        margin-bottom: 20px; /* Add some space between containers */
+    }
+
+    .cont {
+        width: 90%; /* Adjust container width on smaller screens */
+        max-width: 400px; /* Set maximum width for container */
+    }
+}
